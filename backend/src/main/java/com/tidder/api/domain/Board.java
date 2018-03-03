@@ -28,7 +28,7 @@ public class Board {
 
     private Date updatedDate;
 
-    // many threads belong to one user
+    // many boards belong to one user
     @ManyToOne(fetch = FetchType.EAGER)
     private User user;
 

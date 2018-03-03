@@ -30,15 +30,6 @@ public class UserServiceImpl implements UserService {
         this.userMapper = userMapper;
     }
 
-//    @Override
-//    public List<CategoryDTO> getAllCategories() {
-//
-//        return categoryRepository.findAll()
-//                .stream()
-//                .map(categoryMapper::categoryToCategoryDTO)
-//                .collect(Collectors.toList());
-//    }
-
     @Override
     public List<UserDto> findAllUsers() {
         return repository.findAll()
